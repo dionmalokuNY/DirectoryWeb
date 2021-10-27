@@ -1,2 +1,5 @@
-@use "global";
-@use "header";
+// @use "global";
+// @use "header";
+
+@import url(../scss/_global.scss);
+@import url(../scss/_header.scss);
