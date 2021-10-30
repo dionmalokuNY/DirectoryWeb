@@ -1,4 +1,577 @@
-@import url(../scss/global.scss);
-@import url(../scss/header.scss);
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+header {
+  height: 71px;
+  width: 100%;
+}
+header button.btn.btn-primary {
+  background-color: #4e66f8;
+  border-color: #4e66f8;
+}
+header button.btn.btn-primary:hover {
+  background-color: #4257d3;
+  border-color: #3e52c6;
+}
+header button.btn.btn-primary:focus {
+  box-shadow: none;
+}
+header nav {
+  height: 100%;
+}
+header span#basic-addon1 {
+  border: none;
+}
+header input.form-control {
+  background-color: #e9ecef;
+  border: none;
+  outline: none;
+}
+header input.form-control:focus {
+  background-color: #e9ecef;
+  box-shadow: none;
+}
+header a.active {
+  color: #000;
+  font-weight: bold;
+}
+header li.nav-item:last-child {
+  margin-left: 20px;
+}
+header li.nav-item:hover {
+  color: #000;
+  font-weight: bold;
+}
+header a.dropdown-item:hover {
+  color: #4e66f8;
+  background-color: #f8f9fa;
+}
+header span.badge.bg-secondary {
+  color: #17a2b8;
+  background-color: #dcf1f4 !important;
+  margin-left: 10px;
+}
+header ul.navbar-nav {
+  font-weight: bold;
+}
+header .fw-normal {
+  letter-spacing: 0.1em;
+}
+header .dropdown-item {
+  padding: 0.7rem 1.5rem;
+}
+header ul.dropdown-menu.show {
+  box-shadow: 0 0rem 1.5rem rgba(0, 0, 0, 0.18);
+  margin-top: 15px;
+}
+
+.like-local {
+  background: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../img/header/header-photo_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+}
+.like-local hgroup h6 {
+  color: #e83e8c;
+  letter-spacing: 7px;
+  font-weight: bold;
+}
+.like-local hgroup h1 {
+  color: #fff;
+  font-weight: bold;
+}
+.like-local .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.like-local button.btn.btn-primary {
+  background-color: #4e66f8;
+  border-color: #4e66f8;
+}
+.like-local button.btn.btn-primary:hover {
+  background-color: #4257d3;
+  border-color: #3e52c6;
+}
+.like-local button.btn.btn-primary:focus {
+  box-shadow: none;
+}
+.like-local .like-local_form {
+  background-color: red;
+  display: flex;
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.like-local .like-local_form input,
+.like-local .like-local_form select {
+  width: 250px;
+  border: 0px;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+.like-local .like-local_form .form-group {
+  border-right: 3px solid #ddd;
+}
+.like-local .like-local_form .form-group:nth-child(3) {
+  border: 0px;
+}
+
+.booking {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+.booking hgroup {
+  text-align: center;
+}
+.booking hgroup h6 {
+  color: #e83e8c;
+  font-weight: bold;
+  letter-spacing: 3.5px;
+}
+.booking hgroup h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.booking .ikona {
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #e4e8fe;
+}
+.booking .ikona i {
+  font-size: 30px;
+  color: #4e66f8;
+}
+.booking p {
+  color: #6c757d;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.booking h4 {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.our-guides {
+  padding: 130px 0;
+}
+.our-guides hgroup h6 {
+  color: #4e66f8;
+  font-weight: bold;
+  letter-spacing: 3.5px;
+}
+.our-guides hgroup h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.our-guides .row {
+  align-items: center;
+}
+.our-guides .guides {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+.our-guides .guides .guide {
+  border-radius: 5px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 10px;
+}
+.our-guides .guides .guide h4 {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.our-guides .guides .guide h4,
+.our-guides .guides .guide p {
+  color: #fff;
+}
+.our-guides a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+.our-guides a:hover {
+  text-decoration: underline;
+}
+
+.our-deals {
+  background-color: #f8f9fa;
+  padding: 130px 0;
+}
+.our-deals hgroup h6 {
+  color: #e83e8c;
+  font-weight: bold;
+  letter-spacing: 3.5px;
+}
+.our-deals hgroup h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.our-deals .row {
+  align-items: center;
+}
+.our-deals a {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+.our-deals a:hover {
+  text-decoration: underline;
+}
+.our-deals .deals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.our-deals .deals .card {
+  height: 100%;
+}
+.our-deals .deals .card h5.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #343a40;
+}
+.our-deals .deals .card span.card-text {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.our-deals .deals .card-rating {
+  display: flex;
+  justify-content: space-between;
+}
+.our-deals .deals .stars {
+  font-size: 12px;
+  letter-spacing: -0.063rem;
+}
+.our-deals .deals .prices .price {
+  color: #4e66f8;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.our-deals .deals .prices span {
+  color: #6c757d;
+}
+.our-deals .deals .image {
+  position: relative;
+}
+.our-deals .deals .image .user {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+.our-deals .deals .image .user img {
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.our-deals .deals .image .user .user-text {
+  color: #fff;
+}
+.our-deals .deals .deal {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+}
+.our-deals .deals .fav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background-color: #343a40;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.our-deals .deals .fav:hover {
+  cursor: pointer;
+  background-color: #1e1f21;
+}
+
+.holidays {
+  background: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../img/holidays/holidayimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 530px;
+}
+.holidays .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.holidays h2 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.testimonials {
+  padding: 150px 0;
+}
+.testimonials hgroup {
+  text-align: center;
+}
+.testimonials hgroup h6 {
+  color: #4e66f8;
+  font-weight: bold;
+  letter-spacing: 3.5px;
+}
+.testimonials hgroup h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.testimonials .testimonial {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 4rem;
+  position: relative;
+  width: 570px;
+}
+.testimonials .testimonial .avatar {
+  position: absolute;
+  left: -35px;
+  top: 130px;
+}
+.testimonials .testimonial .avatar img {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+}
+.testimonials .testimonial i {
+  font-size: 40px;
+  color: #4e66f8;
+}
+.testimonials .testimonial .testimonial-text p {
+  font-size: 0.9rem;
+  line-height: 30px;
+  color: #656565;
+}
+
+.travel-blog {
+  background-color: #f8f9fa;
+  padding: 150px 0;
+}
+.travel-blog hgroup h6 {
+  color: #e83e8c;
+  font-weight: bold;
+  letter-spacing: 3.5px;
+}
+.travel-blog hgroup h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.travel-blog .row {
+  align-items: center;
+}
+.travel-blog .unique {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+.travel-blog .unique:hover {
+  text-decoration: underline;
+}
+.travel-blog .card {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+}
+.travel-blog a.btn.btn-link.mb-3:focus {
+  box-shadow: none;
+}
+.travel-blog span.card-text {
+  color: #6c757d;
+}
+.travel-blog span.card-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.travel-blog .card-title a {
+  font-weight: bold;
+  color: #343a40;
+  text-decoration: none;
+}
+.travel-blog .card-title a:hover {
+  text-decoration: underline;
+}
+.travel-blog .card-time {
+  color: #adb5bd;
+}
+.travel-blog .card-body p {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.travel-blog .card-body a.btn.btn-link {
+  font-size: 0.775rem;
+  color: #4e66f8;
+  text-decoration: none;
+}
+.travel-blog .card-body a.btn.btn-link:hover {
+  text-decoration: underline;
+}
+
+.instagram {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.instagram .instagram-1 {
+  background-image: url(../img/instagram/instagram-1.jpg);
+  height: 145px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.instagram .instagram-1:hover {
+  cursor: pointer;
+}
+.instagram .instagram-2 {
+  background-image: url(../img/instagram/instagram-2.jpg);
+}
+.instagram .instagram-2:hover {
+  cursor: pointer;
+}
+.instagram .instagram-3 {
+  background-image: url(../img/instagram/instagram-3.jpg);
+}
+.instagram .instagram-3:hover {
+  cursor: pointer;
+}
+.instagram .instagram-4 {
+  background-image: url(../img/instagram/instagram-4.jpg);
+}
+.instagram .instagram-4:hover {
+  cursor: pointer;
+}
+.instagram .instagram-5 {
+  background-image: url(../img/instagram/instagram-5.jpg);
+}
+.instagram .instagram-5:hover {
+  cursor: pointer;
+}
+.instagram .instagram-6 {
+  background-image: url(../img/instagram/instagram-6.jpg);
+}
+.instagram .instagram-6:hover {
+  cursor: pointer;
+}
+.instagram .instagram-7 {
+  background-image: url(../img/instagram/instagram-7.jpg);
+}
+.instagram .instagram-7:hover {
+  cursor: pointer;
+}
+.instagram .instagram-8 {
+  background-image: url(../img/instagram/instagram-8.jpg);
+}
+.instagram .instagram-8:hover {
+  cursor: pointer;
+}
+.instagram .instagram-9 {
+  background-image: url(../img/instagram/instagram-9.jpg);
+}
+.instagram .instagram-9:hover {
+  cursor: pointer;
+}
+.instagram .instagram-10 {
+  background-image: url(../img/instagram/instagram-10.jpg);
+}
+.instagram .instagram-10:hover {
+  cursor: pointer;
+}
+.instagram .instagram-11 {
+  background-image: url(../img/instagram/instagram-11.jpg);
+}
+.instagram .instagram-11:hover {
+  cursor: pointer;
+}
+.instagram .instagram-12 {
+  background-image: url(../img/instagram/instagram-12.jpg);
+}
+.instagram .instagram-12:hover {
+  cursor: pointer;
+}
+
+footer .row {
+  align-items: center;
+}
+footer .gray-bg {
+  background-color: #e9ecef;
+  padding: 150px 0;
+}
+footer .gray-bg h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+footer .gray-bg p {
+  color: #6c757d;
+}
+footer .gray-bg ul {
+  list-style: none;
+  padding-left: 0;
+}
+footer .gray-bg ul li a {
+  color: #6c757d;
+  text-decoration: none;
+}
+footer .gray-bg .social-media i {
+  margin-right: 10px;
+  color: #6c757d;
+}
+footer .gray-bg .social-media i:hover {
+  cursor: pointer;
+  color: #4e66f8;
+}
+footer .gray-bg .social-media i:last-child {
+  margin-right: 0;
+}
+footer .gray-bg input.form-control {
+  background-color: #e9ecef;
+  border-color: #343a40;
+  border-right: none;
+}
+footer .gray-bg input.form-control:focus {
+  box-shadow: none;
+}
+footer .gray-bg button#button-addon2 {
+  font-size: 20px;
+  border-left: none;
+}
+footer .gray-bg button#button-addon2:focus {
+  box-shadow: none;
+}
+footer .black-bg {
+  background: #343a40;
+  padding: 30px 0;
+}
+footer .black-bg p {
+  color: #dee2e6;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+footer .black-bg .credit-cards a img {
+  width: 30px;
+  margin-left: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */

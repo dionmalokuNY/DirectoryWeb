@@ -7,21 +7,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="./assets/img/header/logo.svg" alt="Directory"></a>
               <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                </div>
               </form>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Home
@@ -34,8 +38,9 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#">Contacts</a>
                   </li>
+                  
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Docs
@@ -49,7 +54,7 @@
                       <li><a class="dropdown-item" href="#">Credits</a></li>
                       <li><a class="dropdown-item" href="#">Changelog</a></li>
                       <li><hr class="dropdown-divider fw-normal"></li>
-                      <li><h6 class="dropdown-header">COMPONENTS</h6></li>
+                      <li><h6 class="dropdown-header fw-normal">COMPONENTS</h6></li>
                       <li><a class="dropdown-item" href="#">Bootstrap</a></li>
                       <li><a class="dropdown-item" href="#">Theme</a></li>
                     </ul>
@@ -72,9 +77,9 @@
         <div class="container">
             <hgroup>
                 <h6>THE BEST HOLIDAY EXPERIENCE</h6>
-                <h1>Stay like a local</h1>
+                <h1 class="display-2">Stay like a local</h1>
             </hgroup>
-            <form action="#">
+            <form action="#" class="like-local_form">
               <div class="form-group">
                 <input type="text" placeholder="What are you searching for?">
               </div>
@@ -90,7 +95,7 @@
                   <option value="">Garages</option>
                 </select>
               </div>
-              <button class="btn btn-primary" type="submit">SEARCH</button>
+              <button class="btn btn-primary rounded-pill" type="submit">SEARCH</button>
             </form>
         </div>
     </section>
@@ -98,21 +103,27 @@
         <div class="container">
             <hgroup>
                 <h6>ONE-OF-A-KIND VACATION RENTALS</h6>
-                <h3>Booking with us is easy</h3>
+                <h3 class="mb-5">Booking with us is easy</h3>
             </hgroup>
             <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                  <div class="ikona mb-3">
                     <i class="bi bi-map"></i>
+                  </div>
                     <h4>Find the perfect rental</h4>
                     <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed in</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                  <div class="ikona mb-3">
                     <i class="bi bi-credit-card-2-front"></i>
+                  </div>
                     <h4>Book with confidence</h4>
                     <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                  <div class="ikona mb-3">
                     <i class="bi bi-suit-heart"></i>
+                  </div>
                     <h4>Enjoy your vacation</h4>
                     <p>His room, a proper human room although a little too small, lay peacefully between its four familiar</p>
                 </div>
@@ -121,18 +132,16 @@
     </section>
     <section class="our-guides">
         <div class="container">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <hgroup>
                         <h6>STAY AND EAT LIKE A LOCAL</h6>
                         <h3>Our guides</h3>
                     </hgroup>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-end">
                     <a href="#">See all guides <i class="bi bi-chevron-double-right"></i></a>
-                </div>
+              </div>
               </div>
             <div class="guides">
               <div class="guide" style="background-image: url(./assets/img/guides/new-york.jpg);">
@@ -160,27 +169,25 @@
     </section>
     <section class="our-deals">
       <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <hgroup>
                     <h6>HURRY UP, THESE ARE EXPIRING SOON.</h6>
                     <h3>Last minute deals</h3>
                 </hgroup>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-end">
                   <a href="#">See all deals <i class="bi bi-chevron-double-right"></i></a>
               </div>
             </div>
             <div class="deals">
               <div class="deal">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                   <div class="image">
                     <img src="./assets/img/deals/apartment-1.jpg" class="card-img-top" alt="apartment-1">
                     <div class="user">
                       <img src="./assets/img/deals/avatar-1.jpg" alt="Pamela">
-                      <span>Pamela</span>
+                      <span class="user-text">Pamela</span>
                     </div>
                     <div class="fav">
                       <i class="bi bi-suit-heart"></i>
@@ -188,7 +195,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Modern, Well-Appointed Room</h5>
-                    <div class="card-rating">
+                    <div class="card-rating mb-3">
                       <span class="card-text">Private room</span>
                       <div class="stars">
                         <i class="bi bi-star-fill text-warning"></i>
@@ -206,12 +213,12 @@
                 </div>
               </div>
               <div class="deal">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                   <div class="image">
                     <img src="./assets/img/deals/apartment-2.jpg" class="card-img-top" alt="apartment-2">
                     <div class="user">
                       <img src="./assets/img/deals/avatar-2.jpg" alt="John">
-                      <span>John</span>
+                      <span class="user-text">John</span>
                     </div>
                     <div class="fav">
                       <i class="bi bi-suit-heart"></i>
@@ -219,7 +226,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Cute Quirky Garden apt, NYC adjacent</h5>
-                    <div class="card-rating">
+                    <div class="card-rating mb-3">
                       <span class="card-text">Entire apartment</span>
                       <div class="stars">
                         <i class="bi bi-star-fill text-warning"></i>
@@ -230,19 +237,19 @@
                       </div>
                     </div>
                     <div class="prices">
-                      <span class="price">&dollar;80</span>
+                      <span class="price">&dollar;121</span>
                       <span>per night</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="deal">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                   <div class="image">
                     <img src="./assets/img/deals/apartment-3.jpg" class="card-img-top" alt="apartment-3">
                     <div class="user">
                       <img src="./assets/img/deals/avatar-3.jpg" alt="Julie">
-                      <span>Julie</span>
+                      <span class="user-text">Julie</span>
                     </div>
                     <div class="fav">
                       <i class="bi bi-suit-heart"></i>
@@ -250,7 +257,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Modern Apt - Vibrant Neighborhood!</h5>
-                    <div class="card-rating">
+                    <div class="card-rating mb-3">
                       <span class="card-text">Entire apartment</span>
                       <div class="stars">
                         <i class="bi bi-star-fill text-warning"></i>
@@ -261,19 +268,19 @@
                       </div>
                     </div>
                     <div class="prices">
-                      <span class="price">&dollar;80</span>
+                      <span class="price">&dollar;93</span>
                       <span>per night</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="deal">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                   <div class="image">
                     <img src="./assets/img/deals/apartment-4.jpg" class="card-img-top" alt="apartment-4">
                     <div class="user">
                       <img src="./assets/img/deals/avatar-4.jpg" alt="Barbora">
-                      <span>Barbora</span>
+                      <span class="user-text">Barbora</span>
                     </div>
                     <div class="fav">
                       <i class="bi bi-suit-heart"></i>
@@ -281,7 +288,7 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Sunny Private Studio-Apartment</h5>
-                    <div class="card-rating">
+                    <div class="card-rating mb-3">
                       <span class="card-text">Shared room</span>
                       <div class="stars">
                         <i class="bi bi-star-fill text-warning"></i>
@@ -292,7 +299,7 @@
                       </div>
                     </div>
                     <div class="prices">
-                      <span class="price">&dollar;80</span>
+                      <span class="price">&dollar;75</span>
                       <span>per night</span>
                     </div>
                   </div>
@@ -303,34 +310,42 @@
     </section>
     <section class="holidays">
       <div class="container">
-        <h2>Ready for your next holidays?</h2>
-        <button class="btn btn-light" type="submit">GET STARTED</button>
+        <div class="holiday-text mb-5">
+        <h2 class="display-3">Ready for your next holidays?</h2>
+      </div>
+      <div class="holiday-btn">
+        <button class="btn btn-light" type="submit"><span>GET STARTED</span></button>
+      </div>
       </div>
     </section>
     <section class="testimonials">
       <div class="container">
           <hgroup>
             <h6>TESTIMONIALS</h6>
-            <h3>Our dear customers said about us</h3>
+            <h3 class="mb-5">Our dear customers said about us</h3>
           </hgroup>
           <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <div class="testimonial">
-                <i class="bi bi-chat-quote"></i>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
-                <span class="fw-bold">Jessica Watson</span>
                 <div class="avatar">
                   <img src="./assets/img/testimonials/testimonial-avatar.jpg" alt="Jessica Watson">
+                </div>
+                <div class="testimonial-text">
+                  <i class="bi bi-chat-quote"></i>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                  <span class="fw-bold">Jessica Watson</span>
                 </div>
               </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <div class="testimonial">
-                <i class="bi bi-chat-quote"></i>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
-                <span class="fw-bold">Jessica Watson</span>
                 <div class="avatar">
                   <img src="./assets/img/testimonials/testimonial-avatar.jpg" alt="Jessica Watson">
+                </div>
+                <div class="testimonial-text">
+                  <i class="bi bi-chat-quote"></i>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                  <span class="fw-bold">Jessica Watson</span>
                 </div>
               </div>
             </div>
@@ -339,72 +354,82 @@
     </section>
     <section class="travel-blog">
       <div class="container">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <hgroup>
                         <h6>STORIES FROM AROUND THE GLOBE</h6>
                         <h3>From our travel blog</h3>
                     </hgroup>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <a href="#">See all articles <i class="bi bi-chevron-double-right"></i></a>
-                </div>
-                <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-end">
+                    <a href="#" class="unique">See all articles <i class="bi bi-chevron-double-right"></i></a>
+              </div>  
+            </div>
+                <div class="row gridi">
                   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="./assets/img/travel blog/apartment-1.jpg" class="card-img-top" alt="apartment-1">
                       <div class="card-body">
                         <span class="card-text">TRAVEL</span>
-                        <h5 class="card-title"><a href="">Autumn fashion tips and tricks</a></h5>
-                        <div class="card-time">
+                        <h5 class="card-title mb-2 mt-2"><a href="">Autumn fashion tips and tricks</a></h5>
+                        <div class="card-time mt-3 mb-3">
                           <i class="bi bi-clock"></i>
                           <span class="card-date">July 4, 2016</span>
                         </div>
                         <p>Pellentesque habitant morbi tristique senectus. Vestibulum tortor quam, feugiat vitae, ultricies ege...</p>
-                        <a href="#" class="btn btn-link">READ MORE <i class="bi bi-arrow-right-short"></i></a>
+                        <a href="#" class="btn btn-link mb-3">READ MORE <i class="bi bi-arrow-right-short"></i></a>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                    <div class="card" style="width: 18rem;">
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card">
                       <img src="./assets/img/travel blog/apartment-2.jpg" class="card-img-top" alt="apartment-2">
                       <div class="card-body">
                         <span class="card-text">LIVING</span>
-                        <h5 class="card-title"><a href="">Newest photo apps</a></h5>
-                        <div class="card-time">
+                        <h5 class="card-title mb-2 mt-2"><a href="">Newest photo apps</a></h5>
+                        <div class="card-time mt-3 mb-3">
                           <i class="bi bi-clock"></i>
-                          <span class="card-date">September 18, 2017</span>
+                          <span class="card-date">September 4, 2017</span>
                         </div>
                         <p>Ellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibu...</p>
-                        <a href="#" class="btn btn-link">READ MORE <i class="bi bi-arrow-right-short"></i></a>
+                        <a href="#" class="btn btn-link mb-3">READ MORE <i class="bi bi-arrow-right-short"></i></a>
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card">
                         <img src="./assets/img/travel blog/apartment-3.jpg" class="card-img-top" alt="apartment-3">
                         <div class="card-body">
                         <span class="card-text">TRAVEL</span>
-                        <h5 class="card-title"><a href="">Best books about Photography</a></h5>
-                        <div class="card-time">
+                        <h5 class="card-title mb-2 mt-2"><a href="">Best books about Photography</a></h5>
+                        <div class="card-time mt-3 mb-3">
                           <i class="bi bi-clock"></i>
-                          <span class="card-date">January 16, 2018</span>
+                          <span class="card-date">July 19, 2018</span>
                         </div>
                         <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Mauris placerat eleif...</p>
-                        <a href="#" class="btn btn-link">READ MORE <i class="bi bi-arrow-right-short"></i></a>
+                        <a href="#" class="btn btn-link mb-3">READ MORE <i class="bi bi-arrow-right-short"></i></a>
                       </div>
                     </div>
                   </div>
                 </div>
-            </div>
-      </div>
+              </div>
     </section>
     <section class="instagram">
       <!-- <div class="row">
         <div class="col-xs-3 col-sm-3 col-md-2 col-lg-12 col xl-12"> -->
-          <img src="./assets/img/instagram/instagram-1.jpg" alt="instagram-1">
+          <div class="instagram-1"></div>
+          <div class="instagram-2"></div>
+          <div class="instagram-3"></div>
+          <div class="instagram-4"></div>
+          <div class="instagram-5"></div>
+          <div class="instagram-6"></div>
+          <div class="instagram-7"></div>
+          <div class="instagram-8"></div>
+          <div class="instagram-9"></div>
+          <div class="instagram-10"></div>
+          <div class="instagram-11"></div>
+          <div class="instagram-12"></div>
+          <!-- <img src="./assets/img/instagram/instagram-1.jpg" alt="instagram-1">
           <img src="./assets/img/instagram/instagram-2.jpg" alt="instagram-2">
           <img src="./assets/img/instagram/instagram-3.jpg" alt="instagram-3">
           <img src="./assets/img/instagram/instagram-4.jpg" alt="instagram-4">
@@ -415,65 +440,71 @@
           <img src="./assets/img/instagram/instagram-9.jpg" alt="instagram-9">
           <img src="./assets/img/instagram/instagram-10.jpg" alt="instagram-10">
           <img src="./assets/img/instagram/instagram-11.jpg" alt="instagram-11">
-          <img src="./assets/img/instagram/instagram-12.jpg" alt="instagram-12">
+          <img src="./assets/img/instagram/instagram-12.jpg" alt="instagram-12"> -->
       <!-- </div>
     </div> -->
     </section>
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            <h4>DIRECTORY</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            <div class="social-media">
-              <i class="bi bi-twitter"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-pinterest"></i>
-              <i class="bi bi-vimeo"></i>
+      <div class="gray-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <h4 class="mb-4">DIRECTORY</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              <div class="social-media">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-pinterest"></i>
+                <i class="bi bi-vimeo"></i>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+              <h4 class="mb-4">RENTALS</h4>
+              <ul>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Map on top</a></li>
+                <li><a href="#">Side map</a></li>
+                <li><a href="#">No map</a></li>
+                <li><a href="#">Room detail</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+              <h4 class="mb-4">PAGES</h4>
+              <ul>
+                <li><a href="#">Comparison</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <h4 class="mb-4">DAILY OFFERS & DISCOUNTS</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+                <form action="#" class="newsletter">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Your Email Address" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-dark" type="button" id="button-addon2"><i class="bi bi-telegram"></i></button>
+                  </div>
+                </form>
             </div>
           </div>
-          <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
-            <h4>RENTALS</h4>
-            <ul>
-              <li><a href="#">Rooms</a></li>
-              <li><a href="#">Map on top</a></li>
-              <li><a href="#">Side map</a></li>
-              <li><a href="#">No map</a></li>
-              <li><a href="#">Room detail</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
-            <h4>PAGES</h4>
-            <ul>
-              <li><a href="#">Comparison</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-              <h4>DAILY OFFERS & DISCOUNTS</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
-              <form action="#" class="newsletter">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Your Email Address" aria-label="Your Email Address" aria-describedby="button-addon2">
-                  <button class="btn btn-outline-dark" type="button" id="button-addon2"><i class="bi bi-telegram"></i></button>
-                </div>
-              </form>
-          </div>
         </div>
+      </div>
+      <div class="black-bg">
+        <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <p>&copy;2021, Your company. All rights reserved.</p>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <div class="credit-cards">
-              <a href="https://usa.visa.com/" target="_blank"><img src="./assets/img/footer/visa.svg" alt="visa"></a>
-              <a href="https://www.mastercard.us/en-us.html" target="_blank"><img src="./assets/img/footer/mastercard.svg" alt="mastercard"></a>
-              <a href="https://www.paypal.com/us/webapps/mpp/home" target="_blank"><img src="./assets/img/footer/paypal.svg" alt="paypal"></a>
-              <a href="https://www.westernunion.com/us/en/home.html" target="_blank"><img src="./assets/img/footer/western-union.svg" alt="western-union"></a>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-lg-end text-xl-end">
+              <div class="credit-cards">
+                <a href="https://usa.visa.com/" target="_blank"><img src="./assets/img/footer/visa.svg" alt="visa"></a>
+                <a href="https://www.mastercard.us/en-us.html" target="_blank"><img src="./assets/img/footer/mastercard.svg" alt="mastercard"></a>
+                <a href="https://www.paypal.com/us/webapps/mpp/home" target="_blank"><img src="./assets/img/footer/paypal.svg" alt="paypal"></a>
+                <a href="https://www.westernunion.com/us/en/home.html" target="_blank"><img src="./assets/img/footer/western-union.svg" alt="western-union"></a>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </footer>
