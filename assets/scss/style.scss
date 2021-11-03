@@ -888,6 +888,12 @@ footer {
 // RESPONSIVE 576
 
 @media (max-width: 576.98px) {
+  header {
+    .input-group {
+      display: none;
+    }
+  }
+
   .col-sm-12.col-md-6.col-lg-6.col-xl-6.text-end {
     text-align: start !important;
   }
