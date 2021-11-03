@@ -79,24 +79,34 @@
                 <h6>THE BEST HOLIDAY EXPERIENCE</h6>
                 <h1 class="display-2">Stay like a local</h1>
             </hgroup>
-            <form action="#" class="like-local_form">
-              <div class="form-group">
-                <input type="text" placeholder="What are you searching for?">
+            <div class="search-bar mt-5 p-3 p-lg-1 ps-lg-4">
+            <form action="#">
+              <div class="row">
+                <div class="col-lg-4 col-xl-4  form-group">
+                  <input type="text" placeholder="What are you searching for?">
+                </div>
+                <div class="col-lg-3 col-xl-3  form-group">
+                  <input type="text" placeholder="Location">
+                </div>
+                <div class="col-lg-3 col-xl-3  form-group">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Restaurants</a></li>
+                      <li><a class="dropdown-item" href="#">Hotels</a></li>
+                      <li><a class="dropdown-item" href="#">Cafes</a></li>
+                      <li><a class="dropdown-item" href="#">Garages</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-xl-2 text-end">
+                <button class="btn btn-primary rounded-pill" type="submit">SEARCH</button>
+                </div>
               </div>
-              <div class="form-group">
-                <input type="text" placeholder="Location">
-              </div>
-              <div class="form-group">
-                <select>
-                  <!-- <option title="Categories" disabled selected></option> -->
-                  <option value="">Restaurants</option>
-                  <option value="">Hotels</option>
-                  <option value="">Cafes</option>
-                  <option value="">Garages</option>
-                </select>
-              </div>
-              <button class="btn btn-primary rounded-pill" type="submit">SEARCH</button>
             </form>
+          </div>
         </div>
     </section>
     <section class="booking">
@@ -106,21 +116,21 @@
                 <h3 class="mb-5">Booking with us is easy</h3>
             </hgroup>
             <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
                   <div class="ikona mb-3">
                     <i class="bi bi-map"></i>
                   </div>
                     <h4>Find the perfect rental</h4>
                     <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed in</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
                   <div class="ikona mb-3">
                     <i class="bi bi-credit-card-2-front"></i>
                   </div>
                     <h4>Book with confidence</h4>
                     <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
                   <div class="ikona mb-3">
                     <i class="bi bi-suit-heart"></i>
                   </div>
@@ -325,7 +335,7 @@
             <h3 class="mb-5">Our dear customers said about us</h3>
           </hgroup>
           <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <div class="testimonial">
                 <div class="avatar">
                   <img src="./assets/img/testimonials/testimonial-avatar.jpg" alt="Jessica Watson">
@@ -337,7 +347,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
               <div class="testimonial">
                 <div class="avatar">
                   <img src="./assets/img/testimonials/testimonial-avatar.jpg" alt="Jessica Watson">
@@ -448,7 +458,7 @@
       <div class="gray-bg">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-md-5">
               <h4 class="mb-4">DIRECTORY</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
               <div class="social-media">
@@ -459,7 +469,7 @@
                 <i class="bi bi-vimeo"></i>
               </div>
             </div>
-            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+            <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2 mb-md-5">
               <h4 class="mb-4">RENTALS</h4>
               <ul>
                 <li><a href="#">Rooms</a></li>
@@ -469,7 +479,7 @@
                 <li><a href="#">Room detail</a></li>
               </ul>
             </div>
-            <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+            <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2">
               <h4 class="mb-4">PAGES</h4>
               <ul>
                 <li><a href="#">Comparison</a></li>
@@ -477,7 +487,7 @@
                 <li><a href="#">Contact</a></li>
               </ul>
             </div>
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
                 <h4 class="mb-4">DAILY OFFERS & DISCOUNTS</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
                 <form action="#" class="newsletter">
@@ -493,10 +503,10 @@
       <div class="black-bg">
         <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-sm-4">
             <p>&copy;2021, Your company. All rights reserved.</p>
           </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-lg-end text-xl-end">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-md-end text-lg-end text-xl-end">
               <div class="credit-cards">
                 <a href="https://usa.visa.com/" target="_blank"><img src="./assets/img/footer/visa.svg" alt="visa"></a>
                 <a href="https://www.mastercard.us/en-us.html" target="_blank"><img src="./assets/img/footer/mastercard.svg" alt="mastercard"></a>
