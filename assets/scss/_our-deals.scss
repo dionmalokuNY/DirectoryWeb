@@ -1,0 +1,123 @@
+.our-deals {
+    background-color: $bgcolor;
+    padding: 130px 0;
+  
+    hgroup {
+      h6 {
+        color: $pink;
+        font-weight: bold;
+        letter-spacing: 3.5px;
+      }
+  
+      h3 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+  
+    .row {
+      align-items: center;
+    }
+  
+    a {
+      color: #6c757d;
+      text-decoration: none;
+      font-size: 0.875rem;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .deals {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+  
+      .card {
+        height: 100%;
+  
+        h5.card-title {
+          font-size: 1rem;
+          font-weight: bold;
+          color: #343a40;
+        }
+  
+        span.card-text {
+          font-size: 0.875rem;
+          color: #6c757d;
+        }
+      }
+  
+      .card-rating {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      .stars {
+        font-size: 12px;
+        letter-spacing: -0.063rem;
+      }
+  
+      .prices {
+        .price {
+          color: $blue;
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+  
+        span {
+          color: #6c757d;
+        }
+      }
+  
+      .image {
+        position: relative;
+  
+        .user {
+          position: absolute;
+          bottom: 25px;
+          left: 25px;
+  
+          img {
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+          }
+  
+          .user-text {
+            color: #fff;
+          }
+        }
+      }
+  
+      .deal {
+        box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+        transition: all 0.2s ease-in-out;
+  
+        &:hover {
+          transform: translate3d(0, -5px, 0);
+          cursor: pointer;
+        }
+      }
+  
+      .fav {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        background-color: #343a40;
+        width: 40px;
+        height: 40px;
+        line-height: 43px;
+        text-align: center;
+        border-radius: 50%;
+        opacity: 0.7;
+  
+        &:hover {
+          cursor: pointer;
+          background-color: #1e1f21;
+        }
+      }
+    }
+  }

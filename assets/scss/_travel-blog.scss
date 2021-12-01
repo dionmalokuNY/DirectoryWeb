@@ -1,0 +1,87 @@
+.travel-blog {
+    background-color: $bgcolor;
+    padding: 150px 0;
+  
+    hgroup {
+      h6 {
+        color: $pink;
+        font-weight: bold;
+        letter-spacing: 3.5px;
+      }
+  
+      h3 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+  
+    .row {
+      align-items: center;
+    }
+  
+    .unique {
+      color: #6c757d;
+      text-decoration: none;
+      font-size: 0.875rem;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .card {
+      box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+      transition: all 0.2s ease-in-out;
+  
+      &:hover {
+        transform: translate3d(0, -5px, 0);
+        cursor: pointer;
+      }
+    }
+  
+    a.btn.btn-link.mb-3:focus {
+      box-shadow: none;
+    }
+  
+    span.card-text {
+      color: #6c757d;
+  
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  
+    .card-title {
+      a {
+        font-weight: bold;
+        color: #343a40;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .card-time {
+      color: #adb5bd;
+    }
+  
+    .card-body {
+      p {
+        font-size: 0.875rem;
+        color: #6c757d;
+      }
+  
+      a.btn.btn-link {
+        font-size: 0.775rem;
+        color: $blue;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }

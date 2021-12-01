@@ -1,0 +1,85 @@
+footer {
+    .gray-bg {
+      background-color: #e9ecef;
+      padding: 150px 0;
+  
+      h4 {
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+      }
+  
+      p {
+        color: #6c757d;
+      }
+  
+      ul {
+        list-style: none;
+        padding-left: 0;
+  
+        li {
+          a {
+            color: #6c757d;
+            text-decoration: none;
+          }
+        }
+      }
+  
+      .social-media i {
+        margin-right: 10px;
+        color: #6c757d;
+  
+        &:hover {
+          cursor: pointer;
+          color: $blue;
+        }
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+  
+      input.form-control {
+        background-color: #e9ecef;
+        border-color: #343a40;
+        border-right: none;
+  
+        &:focus {
+          box-shadow: none;
+        }
+      }
+  
+      button#button-addon2 {
+        font-size: 20px;
+        border-left: none;
+  
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  
+    .black-bg {
+      background: #343a40;
+      padding: 30px 0;
+  
+      .row {
+        align-items: center;
+      }
+  
+      p {
+        color: #dee2e6;
+        margin-bottom: 0;
+        font-size: 0.9rem;
+      }
+  
+      .credit-cards {
+        a {
+          img {
+            width: 30px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }

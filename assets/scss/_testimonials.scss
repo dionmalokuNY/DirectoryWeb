@@ -1,0 +1,51 @@
+.testimonials {
+    padding: 150px 0;
+  
+    hgroup {
+      text-align: center;
+      h6 {
+        color: $blue;
+        font-weight: bold;
+        letter-spacing: 3.5px;
+      }
+  
+      h3 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+  
+    .testimonial {
+      box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+      border-radius: 15px;
+      padding: 4rem;
+      position: relative;
+      width: 570px;
+  
+      .avatar {
+        position: absolute;
+        left: -35px;
+        top: 130px;
+  
+        img {
+          width: 80px;
+          border-radius: 50%;
+          border: 3px solid #fff;
+          box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+        }
+      }
+  
+      i {
+        font-size: 40px;
+        color: $blue;
+      }
+  
+      .testimonial-text {
+        p {
+          font-size: 0.9rem;
+          line-height: 30px;
+          color: #656565;
+        }
+      }
+    }
+  }

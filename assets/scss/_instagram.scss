@@ -1,0 +1,92 @@
+.instagram {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  
+    .instagram-1 {
+      background-image: url(../img/instagram/instagram-1.jpg);
+      height: 145px;
+      background-repeat: no-repeat;
+      background-size: cover;
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-2 {
+      background-image: url(../img/instagram/instagram-2.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-3 {
+      background-image: url(../img/instagram/instagram-3.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-4 {
+      background-image: url(../img/instagram/instagram-4.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-5 {
+      background-image: url(../img/instagram/instagram-5.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-6 {
+      background-image: url(../img/instagram/instagram-6.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-7 {
+      background-image: url(../img/instagram/instagram-7.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-8 {
+      background-image: url(../img/instagram/instagram-8.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-9 {
+      background-image: url(../img/instagram/instagram-9.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-10 {
+      background-image: url(../img/instagram/instagram-10.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-11 {
+      background-image: url(../img/instagram/instagram-11.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .instagram-12 {
+      background-image: url(../img/instagram/instagram-12.jpg);
+  
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }

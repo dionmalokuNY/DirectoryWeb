@@ -1,0 +1,125 @@
+// RESPONSIVE 992px
+
+@media (max-width: 991.98px) {
+    header {
+      .container-fluid {
+        background-color: #fff;
+      }
+      & li.nav-item:last-child {
+        margin-left: 0;
+      }
+  
+      & ul.dropdown-menu.show {
+        box-shadow: none;
+        border: none;
+        margin-top: 0;
+      }
+  
+      ul.navbar-nav {
+        padding: 13px 0;
+        font-size: 14px;
+        box-shadow: 0px 15px 10px -13px #111;
+      }
+  
+      button.navbar-toggler {
+        font-size: 16px;
+      }
+  
+      button.btn.btn-primary {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+  
+    .like-local {
+      hgroup {
+        text-align: center;
+      }
+      .search-bar {
+        border-radius: 20px;
+        width: 100%;
+      }
+  
+      #dropdownMenuButton1 {
+        padding: 20px 20px;
+      }
+  
+      ul.dropdown-menu.show {
+        width: 100%;
+      }
+  
+      form input[type="text"] {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 20px;
+      }
+  
+      button.btn.btn-primary {
+        width: 100%;
+      }
+    }
+  
+    .our-guides {
+      .guides {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  
+    .our-deals {
+      .deals {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  
+    .testimonials {
+      .row {
+        display: block;
+      }
+  
+      .testimonial {
+        width: 100%;
+  
+        &:first-child {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  
+    .travel-blog {
+      .card .card-title a {
+        font-size: 18px;
+      }
+  
+      .gridi {
+        row-gap: 20px;
+      }
+    }
+  }
+  
+  // RESPONSIVE 768
+  
+  @media (max-width: 767.98px) {
+    footer .black-bg .row {
+      text-align: center;
+    }
+  }
+  
+  // RESPONSIVE 576
+  
+  @media (max-width: 576.98px) {
+    header {
+      .input-group {
+        display: none;
+      }
+    }
+  
+    .col-sm-12.col-md-6.col-lg-6.col-xl-6.text-end {
+      text-align: start !important;
+    }
+  
+    .testimonials .testimonial {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  

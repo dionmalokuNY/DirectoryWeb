@@ -1,0 +1,66 @@
+.our-guides {
+    padding: 130px 0;
+  
+    hgroup {
+      h6 {
+        color: $blue;
+        font-weight: bold;
+        letter-spacing: 3.5px;
+      }
+  
+      h3 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+  
+    .row {
+      align-items: center;
+    }
+  
+    .guides {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 30px;
+  
+      .guide {
+        border-radius: 5px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-left: 10px;
+        transition: all 0.2s ease-in-out;
+  
+        &:hover {
+          transform: translate3d(0, -5px, 0);
+          cursor: pointer;
+        }
+  
+        h4 {
+          font-weight: bold;
+          letter-spacing: 0.1rem;
+          font-size: 1rem;
+          text-transform: uppercase;
+        }
+  
+        h4,
+        p {
+          color: #fff;
+        }
+      }
+    }
+  
+    a {
+      color: #6c757d;
+      text-decoration: none;
+      font-size: 0.875rem;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
